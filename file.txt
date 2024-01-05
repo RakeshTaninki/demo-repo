@@ -1,3 +1,23 @@
-created to test the webhook trigger
+pipeline {
+    agent any
 
-assd
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello World'
+                sh "ls -la"
+            }
+        }
+        
+        stage('Stage 2') {
+            steps {
+                echo 'Hello World'
+            }
+        }        
+        stage('Stage 3') {
+            steps {
+                echo 'Hello World'
+            }
+        }                
+    }
+}
